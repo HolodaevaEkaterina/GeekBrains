@@ -14,8 +14,6 @@ public class Track implements Obstacle{
 
   @Override
   public boolean done(int value) {
-    if (value >= getLength())
-      return true;
-    return false;
+    return value >= getLength();
   }
 }

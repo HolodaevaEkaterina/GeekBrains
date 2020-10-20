@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class Competition {
   public static void main(String[] args) {
-    Obstacle[] obstacles = new Obstacle[]{new Wall(0.1), new Track(10)};
+    Obstacle[] obstacles = new Obstacle[]{new Wall(0.1), new Track(10), new Wall(20)};
     Entity[] entities = new Entity[]{new Person("Джек"), new Cat("Мурзик"), new Robot("Робот")};
     List<Entity> winners = passCompetition(entities, obstacles);
     System.out.println("Победители:");

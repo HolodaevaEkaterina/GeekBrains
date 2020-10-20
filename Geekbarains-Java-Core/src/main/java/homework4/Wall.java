@@ -14,8 +14,6 @@ public class Wall implements Obstacle{
 
   @Override
   public boolean done(int value) {
-    if (value >= getHeight())
-      return true;
-    return false;
+    return value >= getHeight();
   }
 }
