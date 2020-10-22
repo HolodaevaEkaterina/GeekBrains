@@ -1,18 +1,18 @@
 package homework4;
 
-public class Robot extends Entity {
+public class Robot extends Entity implements Runnable, Jumpuble{
 
   public Robot(String name) {
     super(name);
   }
 
   @Override
-  public int maxHeight() {
-    return 5;
+  public double maxHeightWall() {
+    return 3;
   }
 
   @Override
-  public int maxLength() {
-    return 150;
+  public double MaxLengthTrack() {
+    return 1000;
   }
 }

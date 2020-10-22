@@ -20,13 +20,11 @@ public abstract class Entity {
     isRunning = running;
   }
 
-  public void unSuccess() {
-    System.out.println(getName() + " препятствие не прошел");
+  public void unSuccess(String name) {
+    System.out.println(getName() + " не преодолел препятствие " + name);
   }
 
   public void print() {
     System.out.println(getName());
   }
-  public abstract int maxHeight();
-  public abstract int maxLength();
 }
