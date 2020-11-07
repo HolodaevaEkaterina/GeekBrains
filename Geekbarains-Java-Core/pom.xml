@@ -13,4 +13,12 @@
       <maven.compiler.target>14</maven.compiler.target>
     </properties>
 
+    <dependencies>
+      <dependency>
+        <groupId>com.squareup.okhttp3</groupId>
+        <artifactId>okhttp</artifactId>
+        <version>3.11.0</version>
+      </dependency>
+    </dependencies>
+
 </project>
