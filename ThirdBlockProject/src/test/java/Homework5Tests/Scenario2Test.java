@@ -1,6 +1,7 @@
 package Homework5Tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -14,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 //Поиск пунктов выдачи в Санкт Петербурге
 public class Scenario2Test {
 
+  @Feature("Old tests")
  @Test
   public void scenario2Test() {
     ChromeOptions options = new ChromeOptions();

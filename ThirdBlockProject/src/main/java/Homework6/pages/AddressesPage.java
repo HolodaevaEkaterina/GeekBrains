@@ -1,6 +1,7 @@
 package Homework6.pages;
 
 import Homework6.BasePage;
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -17,16 +18,18 @@ public class AddressesPage extends BasePage {
     super(driver);
   }
 
+  @Step(value = "search for delivery points in {city}")
   public AddressesPage searchCity(String city) {
     citySearch.sendKeys(city);
     return this;
   }
-
+  @Step(value = "pressing the button {key}")
   public AddressesPage clickKey(Keys key) {
     citySearch.sendKeys(key);
     return this;
   }
 
+  @Step(value = "check that the list of items is not empty")
   public AddressesPage checkCityList() {
     Assertions.assertTrue(driver.findElements(By.className("address-list-item-name")).size() != 0);
     return this;

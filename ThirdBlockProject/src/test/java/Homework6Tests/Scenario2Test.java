@@ -2,6 +2,7 @@ package Homework6Tests;
 
 import Homework6.pages.MainShopPage;
 import Homework6Tests.BaseTest.BaseTest;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.Keys;
 import org.slf4j.Logger;
@@ -12,6 +13,7 @@ public class Scenario2Test extends BaseTest {
 
   private static final Logger logger = LoggerFactory.getLogger(Scenario2Test.class);
 
+  @Feature("Pick-up points")
   @Test
   public void scenario2Test() {
 
