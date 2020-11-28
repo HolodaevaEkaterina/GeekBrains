@@ -1,0 +1,17 @@
+package Homework6;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public abstract class BasePage {
+
+  protected WebDriver driver;
+  protected WebDriverWait wait10sec;
+
+  public BasePage(WebDriver driver) {
+    this.driver = driver;
+    this.wait10sec = new WebDriverWait(driver, 10);
+    PageFactory.initElements(driver, this);
+  }
+}
