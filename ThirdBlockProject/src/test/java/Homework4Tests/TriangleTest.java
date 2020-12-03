@@ -1,6 +1,7 @@
 package Homework4Tests;
 
 import Homework4.AreaClass;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -16,6 +17,7 @@ public class  TriangleTest {
 
   private final AreaClass areaClass = new AreaClass();
 
+  @Feature("Old tests")
   @ParameterizedTest(name = "can calculate square with sides {0} , {1} and  {2}, and result - {3}")
   @MethodSource("calculationProvider1")
   void CalculateArea_ExistTriangles_Cases(int a, int b, int c, double result){
@@ -27,6 +29,7 @@ public class  TriangleTest {
     assertEquals(result, actual);
   }
 
+  @Feature("Old tests")
   @ParameterizedTest(name = "can`t calculate square with sides {0} , {1} and  {2}")
   @MethodSource("calculationProvider2")
   void CalculateArea_NonExistTriangles_Cases(int a, int b, int c){

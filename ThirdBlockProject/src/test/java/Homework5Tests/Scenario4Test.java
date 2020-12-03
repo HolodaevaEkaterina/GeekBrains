@@ -1,6 +1,7 @@
 package Homework5Tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -16,6 +17,7 @@ import java.util.concurrent.TimeUnit;
 public class Scenario4Test {
 
   //Добавление элемента в корзину
+  @Feature("Old tests")
   @Test
   public void scenario4Test() throws InterruptedException {
     ChromeOptions options = new ChromeOptions();

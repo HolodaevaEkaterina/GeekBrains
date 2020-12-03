@@ -1,6 +1,7 @@
 package Homework6.pages;
 
 import Homework6.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,11 +15,13 @@ public class BookPage extends BasePage {
     super(driver);
   }
 
+  @Step(value = "add item to basket")
   public BookPage addToBasket() {
     addButton.click();
     return this;
   }
 
+  @Step(value = "go back to the previous page")
   public SearchPage back() {
     return new SearchPage(driver);
   }
